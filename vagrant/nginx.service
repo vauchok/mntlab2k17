@@ -10,8 +10,8 @@ ExecStart=/home/vagrant/nginx/sbin/nginx
 ExecReload=/bin/kill -s HUP $MAINPID
 ExecStop=/bin/kill -s QUIT $MAINPID
 PrivateTmp=true
-User=vagrant
-Group=vagrant
+User=root
+Group=root
 
 [Install]
 WantedBy=multi-user.target

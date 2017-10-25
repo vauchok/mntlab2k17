@@ -22,8 +22,6 @@ echo "upstream backend {
 sudo systemctl start firewalld
 sudo systemctl enable firewalld
 sudo firewall-cmd --permanent --zone=public --add-port=80/tcp
-sudo firewall-cmd --permanent --zone=public --add-port=8085/tcp
-sudo firewall-cmd --permanent --zone=public --add-forward-port=port=80:proto=tcp:toport=8085
 sudo firewall-cmd --reload
 
 
